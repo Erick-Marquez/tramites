@@ -1,0 +1,241 @@
+/*
+ * Globals
+ */
+ .loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/pageLoader.gif') 50% 50% no-repeat rgb(249, 249, 249);
+  opacity: .8;
+}
+
+/* Links */
+.pading{
+padding: 40px;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+a:hover{
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+  background: url("../img/fondo.jpg") no-repeat center fixed;
+  background-color: rgb(187, 191, 186);
+  background-size: cover;
+  font-family: 'Amaranth', sans-serif;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+  background-color: #333;
+  font-size: 2em;
+}
+
+.cover-container {
+  max-width: 100em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.692);
+  padding: 1em 1em 0em 1em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  font-size: 1.5em;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 5rem;
+}
+/*
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+*/
+.cover .btn{
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+  box-shadow: rgba(0, 0, 255, 0.5);
+  width: 100%;
+  border-radius: 2em;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+.biblioteca{
+  width: 150px;
+  height: 150px;
+}
+.idiomas{
+  width: 150px;
+  height: 150px;  
+}
+
+.cuadro{
+  font-size: 1.3em;
+  color: white;
+  border-radius: 0em;
+  background-color: rgba(52, 55, 82, 0.8);
+  padding: 0.5em 0.5em 0.5em 0.5em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+  text-shadow: 2px 2px 4px rgb(43, 43, 43);
+
+}
+
+.cuadro1{
+  font-size: 1.5em;
+  color: white;
+  border-radius: 0em;
+  padding: 0.5em 0.5em 0.5em 0.5em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-shadow: 2px 2px 4px rgb(52, 55, 82);
+
+}
+
+.cuadro2{
+  font-size: 1.3em;
+  color: white;
+  border-radius: 0.5em;
+  /*background-color: rgba(37, 37, 38, 0.8);*/
+  background-color: rgba(52, 55, 82, 0.8);
+  padding: 0.5em 1.2em 0.5em 1.2em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+}
+
+.cuadro3{
+  transition: 0.5s;
+  height: 420px;
+  font-size: 0.9em;
+  color: white;
+  border-radius: 0.5em;
+  /*background-color: rgba(166, 147, 124, 0.8);*/
+  background-color: rgba(0, 0, 0, 0.692);
+  padding: 1em 0.5em 4em 0.5em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+  margin: 10px 10px 12px 2px;
+}
+
+.cuadro3:hover{
+  transition: 0.5s;
+  height: 440px;
+  font-size: 0.9em;
+  color: black;
+  border-radius: 0.5em;
+  /*background-color: rgba(217, 169, 26, 0.8);*/
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 1em 0.5em 4em 0.5em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+  margin-bottom: 2px;
+  margin-top: 0px;
+}
+
+.cuadro3 .btn{
+  background-color: rgba(255, 255, 255, 0.815);
+  color: black;
+  box-shadow: rgba(0, 0, 255, 0.5);
+  border-radius: 0.5em;
+  font-size: 1em;
+  margin: auto;
+  font-weight: bold;
+}
+
+.cuadro4{
+  transition: 0.5s;
+  height: 420px;
+  font-size: 0.9em;
+  color: white;
+  border-radius: 0.5em;
+  /*background-color: rgba(166, 147, 124, 0.8);*/
+  background-color: rgba(0, 0, 0, 0.692);
+  padding: 1em 0.5em 4em 0.5em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+  margin: 10px 10px 12px 2px;
+}
+
+.cuadro4:hover{
+  transition: 0.5s;
+  height: 440px;
+  font-size: 0.9em;
+  color: black;
+  border-radius: 0.5em;
+  /*background-color: rgba(217, 169, 26, 0.8);*/
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 1em 0.5em 4em 0.5em; /*(Arriba, Izquierda, Abajo, Derecha)*/
+  margin-bottom: 2px;
+  margin-top: 0px;
+}
+
+.chico{
+  width: 200px;  
+}
